@@ -1,0 +1,15 @@
+.warn{
+    padding: 30xp;
+    color: #cab10d;
+    border: 3px solid #cab10d;
+    font-size: 6rem;
+    width: 300px;
+}
+
+.error{
+    padding: 30xp;
+    color: #db1f0a;
+    border: 3px solid #db1f0a;
+    font-size: 6rem;
+    width: 300px;
+}
