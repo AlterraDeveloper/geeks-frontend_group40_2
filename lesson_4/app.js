@@ -85,6 +85,11 @@ let isO = function (code) {
   return arrayContains(oCodes, code);
 };
 
+let isBeeline = function(code){
+    let beelineCodes = [];
+    return arrayContains(beelineCodes, code);
+}
+
 // 996999112233
 function getOperatorName(phoneNumber) {
   if (!validatePhoneNumber(phoneNumber)) {
@@ -97,6 +102,8 @@ function getOperatorName(phoneNumber) {
   if (isMega(operatorCode)) return "MEGA";
 
   if (isO(operatorCode)) return "O!";
+
+  if(isBeeline(operatorCode)) return "Beeline";
 
   return null;
 }
