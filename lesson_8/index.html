@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Создать студента GEEKS</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label class="required" for="username">Имя студента</label>
+          <input type="text" placeholder="Абасова Азиза" id="username" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label class="required" for="telegram">Telegram</label>
+          <input type="text" placeholder="@random_user_123" id="telegram" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Пароль</label>
+          <input
+            type="password"
+            placeholder="Придумайте пароль"
+            id="password"
+          />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-eye"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password2">Повторить пароль</label>
+          <input type="password" placeholder="Пароль еще раз" id="password2" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="agree">Согласен на обработку данных</label>
+          <input type="checkbox" id="agree" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="course">Курс обучения</label>
+          <select id="course">
+            <option value="none" selected>Не определился</option>
+            <option value="frontend" >Front-end</option>
+            <option value="backend">Backend-end</option>
+            <option value="android">Android</option>
+            <option value="ios">iOS</option>
+          </select>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="group_0">15:00 - 17:00</label>
+          <input type="radio" name="group" id="group_0">
+          <label for="group_1">17:00 - 19:00</label>
+          <input type="radio" name="group" id="group_1">
+          <label for="group_2">19:00 - 21:00</label>
+          <input type="radio" name="group" id="group_2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <input type="submit" value="Начать обучение" />
+      </form>
+    </div>
+  </body>
+</html>
